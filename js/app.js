@@ -8,7 +8,7 @@ function comprar(){
     let quantidade = document.getElementById('qtd').value;
     let tipoIngresso = document.getElementById('tipo-ingresso').value;
 
-    //Condicionais e calculo da quantidade de ingressos disponíveis
+    //Condicionais e calculo da quantidade de ingressos disponíveis e geração dos alertas
     if (tipoIngresso == 'inferior'){
         if ((inferior - quantidade) >= 0){
             inferior = inferior - quantidade;
@@ -36,7 +36,4 @@ function comprar(){
     quantidadeRestante.innerHTML = `<li>Pista<span id="qtd-pista">${pista}</span></li>
     <li>Cadeira superior<span id="qtd-superior">${superior}</span></li>
     <li>Cadeira inferior<span id="qtd-inferior">${inferior}</span></li> `
-
-    // e geração de alertas
-
 }
