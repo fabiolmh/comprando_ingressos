@@ -14,7 +14,6 @@ function comprar(){
             inferior = inferior - quantidade;
         } else {
            alert('Quantidade indisponível para INFERIOR.');
-           inferior = inferior;
         }
     } else {
             if (tipoIngresso == 'superior') {
